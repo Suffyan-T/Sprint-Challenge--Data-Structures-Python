@@ -30,6 +30,9 @@ class RingBuffer:
         return [value for value in self.data if value is not None]
 
 
+# Runtime Complexity of this solution is O(n)
+# Runtime time of this solution is 0.0000 seconds
+
 #Testing
 a=RingBuffer(5)
 for i in range(10):
