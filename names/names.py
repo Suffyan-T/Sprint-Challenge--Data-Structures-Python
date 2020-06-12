@@ -19,7 +19,7 @@ duplicates = []  # Return the list of duplicates in this data structure
 #         if name_1 == name_2:
 #             duplicates.append(name_1)
 
-# This Implimentaion is 0(n^2)
+# This Implimentaion is O(n^2)
 # Runtime is  4.47686505317688 seconds
 
 
@@ -31,7 +31,7 @@ duplicates = []  # Return the list of duplicates in this data structure
 #   if item in names_2:
 #     duplicates.append(item)
 
-# This Implimentaion is 0(n)
+# This Implimentaion is O(n)
 # Runtime is  0.8600955009460449 seconds
 
 
@@ -39,9 +39,9 @@ duplicates = []  # Return the list of duplicates in this data structure
 
 
 # -----ATTEMPT 2-----
-# [duplicates.append(element) for element in names_1 if element in names_2]
+# [duplicates.append(item) for item in names_1 if item in names_2]
 
-# This Implimentaion is also 0(n), but with code cleaned up and a slightly faster runtime
+# This Implimentaion is also O(n), but with code cleaned up and a slightly faster runtime
 # Runtime is  0.8572025299072266 seconds
 
 
@@ -86,7 +86,7 @@ class BinarySearchTree:
 
 # IMPLEMENT SOLUTION
 
-# Create a BST with names_1
+# Create a BST with names_1[0]
 BST = BinarySearchTree(names_1[0])
 
 # For each name in names_1
@@ -101,7 +101,7 @@ for name in names_2:
         # Add the name to duplicates list 
         duplicates.append(name)
 
-# This Implimentaion is 0(log n)
+# This Implimentaion is O(log n)
 # Runtime is  0.08483457565307617 seconds
 
 
